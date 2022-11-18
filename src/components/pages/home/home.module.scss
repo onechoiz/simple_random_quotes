@@ -1,0 +1,73 @@
+@import "../../../../public/style/var.scss";
+
+body{
+    background-color: $pink ;
+}
+.loading{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.cont{
+   position: relative; 
+   width: 100%;
+   min-height: 100vh;
+
+}
+.quote-cont{
+    
+    background-color: $yellow;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    margin:  20% auto;
+    font-family: $zen ;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 200px $yellow;
+    
+
+}
+.quote{
+    border: 5px dotted $green;
+
+   
+    padding: 20px;
+    margin: 20px 10px;
+
+}
+
+.reload{
+    color: $dark-purp;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.author{
+
+margin: 10px;
+font-style: italic;
+    
+}
+
+@media (max-width: 790px){
+
+    .quote-cont{
+        width: 90%;
+        // min-height: 80vh;
+    }
+    //  .quote{
+    //    min-height: 30vh;
+    // }
+}
+@media (max-width: 457px){
+
+    .quote-cont{
+        width: 95%;
+        // min-height: 80vh;
+    }
+
+    // .quote{
+    //    min-height: 40vh;
+    // }
+}
